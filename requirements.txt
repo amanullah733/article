@@ -1,3 +1,4 @@
-pip install django;
-
-python manage.py runserver;
+Django==5.0.1
+djangorestframework
+gunicorn
+whitenoise
