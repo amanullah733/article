@@ -1,4 +1,0 @@
-Django==5.0.1
-djangorestframework
-gunicorn
-whitenoise
