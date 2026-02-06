@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'read.css' %}">
+{% endblock %}
+{% block content %}
+<div class="read-container">
+    <div class="read-header">
+        <h1 class="read-title">{{ data.title }}</h1>
+    </div>
+
+    <div class="read-body">
+        <p class="read-desc">{{ data.desc }}</p>
+    </div>
+
+    <div class="read-footer">
+        <a href="{% url 'home' %}" class="back-btn">← Back to Home</a>
+    </div>
+</div>
+{% endblock %}
